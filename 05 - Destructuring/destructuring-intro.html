@@ -14,7 +14,11 @@
     twitter: '@wesbos'
   };
 
-  const { first, last, twitter } = person;
+
+//const first = person.first;
+//const last = person.last;
+//destructuring syntax of above
+//const { first, last, twitter } = person;
 
   const wes = {
     first: 'Wes',
@@ -30,11 +34,18 @@
     }
   };
 
+//const twitter = wes.links.social.twitter;
+//const facebook = wes.links.social.twitter;
+//destructuring syntax for the above while also renaming the variables
   const { twitter: tweet, facebook: fb } = wes.links.social;
 
-  const settings = { width: 300, color: 'black' }  // height, fontSize
-  const { width = 100, height = 100, color = 'blue', fontSize = 25} = settings;
 
+//with this syntax we are setting a default, creating an element and setting a default.
+  const settings = { width: 300, color: 'black' }  // height, fontSize
+  //setting default values. settings object properties(width and color) will be used instead of the below defaults.
+  const { width = 100, height = 100, color = 'blue', fontSize = 25} = settings;
+// Object destructuring with variable renaming & default values
+const {w: width =400, h: height = 500} = {w: 800}
 </script>
 </body>
 </html>

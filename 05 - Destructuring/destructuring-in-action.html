@@ -8,7 +8,14 @@
 <script>
   let inRing = 'Hulk Hogan';
   let onSide = 'The Rock';
+  //previous method
+  //var tmp =inRing;
+  //inRing = onside;
+  //onSide = tmp;
+  //destructuring we can just restructure them,
+  // estentially switching the values
 
+ 
   console.log(inRing, onSide);
   [inRing, onSide] = [onSide, inRing];
   console.log(inRing, onSide);

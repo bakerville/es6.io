@@ -15,6 +15,7 @@
 
   </div>
 
+
 <script>
   const dict = {
     HTML: 'Hyper Text Markup Language',
@@ -29,7 +30,7 @@
       }
       return value;
     });
-
+//will loop over each string and build the sentence as we go.
     return strings.reduce((sentence, string, i) => {
       return `${sentence}${string}${abbreviated[i] || ''}`;
     }, '');

@@ -13,7 +13,10 @@
 <script>
   function highlight(strings, ...values) {
     let str = '';
+    //get the string and the index
     strings.forEach((string, i) => {
+      //str+= string + (valus[i] || '');
+      //contenteditable allows for the values to be edited
       str += `${string} <span contenteditable class="hl">${values[i] || ''}</span>`;
     });
     return str;
