@@ -23,17 +23,23 @@
 
   cuts.shop = 'MM MEats';
 
+//regular for loop.
+//cons: confusing syntax, doesn't read well
   // for (let i = 0; i < cuts.length; i++) {
   //   console.log(cuts[i]);
   // }
 
+//.forEach array method
+//cons: can't skip or abort the loop.
   // cuts.forEach((cut) => {
   //   console.log(cut);
   //   if(cut === 'Brisket') {
-  //     continue;
+  //     continue;//continue and break can't be used
   //   }
   // });
 
+//for in loop
+//cons:
   // for (const index in cuts) {
   //   console.log(cuts[index]);
   // }
@@ -44,7 +50,7 @@
     }
     console.log(cut);
   }
-
+//3:38
 </script>
 </body>
 </html>
