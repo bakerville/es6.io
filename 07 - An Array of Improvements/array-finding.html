@@ -179,6 +179,8 @@
   ];
   const code = 'VBgtGQcSf';
   const post = posts.find(post => post.code === code);
+//.filter would be able to return an array of objects, when you want multiple
+
 
   const postIndex = posts.findIndex(post => post.code === code);
   console.log(postIndex);

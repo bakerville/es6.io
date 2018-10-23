@@ -14,6 +14,17 @@
     sugar: 10
   };
 
+//may not be available in all browsers: .entries and .values
+  // for (const prop of apple.entries()) {
+  //   console.log(prop);
+  // }
+
+  
+  //for (const prop of Object.keys(apple)) {
+  //  const value = apple[prop]; 
+  // console.log(prop);
+  // }
+
   for (const prop in apple) {
     const value = apple[prop];
     console.log(value, prop);
