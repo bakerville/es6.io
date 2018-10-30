@@ -9,9 +9,13 @@
 
   const featured = ['Deep Dish', 'Pepperoni', 'Hawaiian'];
   const specialty = ['Meatzza', 'Spicy Mama', 'Margherita'];
-
+// let pizzas =[];
+// pizzas =pizzas.concat(featured);
+// pizzas.push('veg');
+// pizzas= pizzas.concat(specialty);
+// console.log(pizzas);
   const pizzas = [...featured, 'veg', ...specialty];
-  const fridayPizzas = [...pizzas];
+  const fridayPizzas = [...pizzas]; // avoids destruction of original array. ...pizzas copies the pizzas array.
 
   const deepDish = {
     pizzaName: 'Deep Dish',
