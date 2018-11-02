@@ -12,6 +12,7 @@
   </div>
 <script>
   const people = Array.from(document.querySelectorAll('.people p'));
+  //same results as above: const people = [...document.querySelectorAll('.people p')];
   const names = people.map((person) => person.textContent );
 
   const deepDish = {
@@ -23,6 +24,7 @@
   const shoppingList = ['Milk', 'Flour', ...deepDish.ingredients];
   // console.log(shoppingList);
 
+//removing a object from the array
   const comments = [
     { id: 209384, text: 'I love your dog!' },
     { id: 523423, text: 'Cuuute! 🐐' },
@@ -32,8 +34,11 @@
   const id = 632429;
   const commentIndex = comments.findIndex(comment => comment.id === id);
 
+// creates a new array of objects and has excluded the rude comment.
   const newComments = [...comments.slice(0,commentIndex), ...comments.slice(commentIndex + 1)];
   console.log(newComments);
+
+  //maybe in react: this.setState({ comments: newComments})
 
 </script>
 </body>
