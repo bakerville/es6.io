@@ -6,8 +6,10 @@
 </head>
 <body>
 <script>
+  //typically used with json api, fetch requests the data
 const postsPromise = fetch('http://wesbos.com/wp-json/wp/v2/posts');
 
+//can chain .then together, and then a .catch
 postsPromise
   .then(data => data.json())
   .then(data => { console.log(data) })

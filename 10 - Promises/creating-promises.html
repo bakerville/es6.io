@@ -6,8 +6,10 @@
 </head>
 <body>
 <script>
+  //creating a promise
   const p = new Promise((resolve, reject) => {
     setTimeout(() => {
+      //resolve('Wes is cool.')
       reject(Error('Err wes isn\'t cool'));
     }, 1000);
   });
@@ -16,6 +18,7 @@
     .then(data => {
       console.log(data);
     })
+    //we should catch the error
     .catch(err => {
       console.error(err);
     });
