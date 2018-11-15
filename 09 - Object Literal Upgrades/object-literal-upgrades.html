@@ -6,10 +6,12 @@
 </head>
 <body>
 <script>
+
   const first = 'snickers';
   const last = 'bos';
   const age = 2;
   const breed = 'King Charles Cav';
+
   const dog = {
     firstName: first,
     last,
@@ -19,18 +21,23 @@
   };
   console.log(dog);
 
+//method, don't use a arrow function
   const modal = {
+    //create: function(selector)
     create(selector) {
 
     },
+    //open: function(content)
     open(content) {
 
     },
+    //close: function(goodbye)
     close(goodbye) {
 
     }
   }
 
+//takes in hex code and returns the opposite
   function invertColor(color) {
       return '#' + ("000000" + (0xFFFFFF ^ parseInt(color.substring(1),16)).toString(16)).slice(-6);
   }
@@ -46,6 +53,7 @@
   const keys = ['size', 'color', 'weight'];
   const values = ['medium', 'red', 100];
 
+//computed property keys
   const shirt = {
     [keys.shift()]: values.shift(),
     [keys.shift()]: values.shift(),
